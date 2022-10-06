@@ -38,13 +38,13 @@
  */
 function makeCalculator() {
   const calculator = {
+    result: 0,
+
     operate(callback, number) {
       callback(number);
 
       return this;
     },
-
-    result: 0,
 
     reset() {
       calculator.result = 0;
